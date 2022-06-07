@@ -12,6 +12,16 @@ body {
     align-items: center;
 }
 
+.navbar__logo {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.navbar img {
+    width: 90px;
+    margin-right: 1rem;
+}
+
 .navbar__list {
     display: flex;
     margin-right: 2rem;
