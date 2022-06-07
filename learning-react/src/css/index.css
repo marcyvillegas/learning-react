@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+    background-color: #354259;
+    color: #ffff;
+    font-family: 'Questrial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.navbar__list > li {
+    padding: 1rem;
+    list-style: none;
+}
