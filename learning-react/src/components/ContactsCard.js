@@ -1,9 +1,10 @@
 
-export default function ContactsCard() {
+export default function ContactsCard(props) {
     return (
-        <div className="contacts__card-background">
-            <img src="https://picsum.photos/200" alt="random" />
-            <p>random name</p>
+        // properties of the data
+        <div className="contacts__carpropd-background">
+            <p>{props.name}</p>
+            <p>{props.address}</p>
         </div>
     );
 }
