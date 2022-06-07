@@ -1,0 +1,13 @@
+
+NOTES:
+
+- React is a way to program on a declarative way (what should be done?)
+    - "just tell me what to do, and I'll worry about how I get it done."
+- Doing things in a Vanilla JS way is an imperative (how should it be done?)
+
+- uses JSX -> javascript & html
+    - only returns one parent element
+    - can store in a variable and function
+
+
+
