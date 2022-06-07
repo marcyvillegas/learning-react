@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: #354259;
     color: #ffff;
     font-family: 'Questrial', sans-serif;
@@ -30,4 +32,11 @@ body {
 .navbar__list > li {
     padding: 1rem;
     list-style: none;
+}
+
+.main {
+    padding: 5rem;
+    background-image: url('../images/react-logo.png');
+    background-repeat: no-repeat;
+    background-position: right 75%;
 }
