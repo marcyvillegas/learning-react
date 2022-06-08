@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import MainContent from './components/MainContent'
 import Contacts from './components/Contacts'
 import Counter from './components/Counter'
+import FlipState from './components/FlipState'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <MainContent />
       <Contacts />
       <Counter />
+      <FlipState />
     </div>
   );
 }

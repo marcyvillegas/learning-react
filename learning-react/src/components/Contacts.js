@@ -23,7 +23,7 @@ export default function Contacts() {
         <div className="contacts">
             <h1>{contactsTitle}</h1>
 
-            <button onClick={changeContactsTitle}>Change</button>
+            <button onClick={changeContactsTitle}>Change title</button>
 
             <div className="contacts__card">
                 {cards}
