@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import ContactsCard from '../components/ContactsCard'
-import { contacts } from '../contactsData'
+import { contacts } from '../lib/contactsData'
 
 let incrementingNumber = 3;
 
@@ -45,7 +45,7 @@ export default function Contacts() {
     // rendering the mapped data with the component
     return (
         <div className="contacts">
-            <h1>{contactsTitle ? 'Titles is changed' : 'Contacts (Array in State)'}</h1>
+            <h1>{contactsTitle ? 'Titles is changed' : 'Contacts (Array in  State)'}</h1>
 
             <div style={{ display: 'flex', gap: '2rem' }}>
                 <button onClick={changeContactsTitle}>Change title</button>
