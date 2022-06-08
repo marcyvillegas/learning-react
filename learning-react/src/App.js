@@ -4,6 +4,7 @@ import MainContent from './components/MainContent'
 import Contacts from './components/Contacts'
 import Counter from './components/Counter'
 import FlipState from './components/FlipState'
+import Pet from './components/Pet'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Contacts />
       <Counter />
       <FlipState />
+      <Pet />
     </div>
   );
 }
