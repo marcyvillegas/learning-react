@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import Count from './Count'
 
 export default function Counter() {
 
@@ -22,12 +23,12 @@ export default function Counter() {
 
     return (
         <div className="counter">
-            <div>
-                <h1>Counter</h1>
+                <h1 style={{margin: '0'}}>Counter</h1>
+            <div style={{display: 'flex', alignItems: 'center', gap: '2rem'}}>
+                <button onClick={decreaseNumber}>Minus</button>
+                <Count number={countedNumber} />
+                <button onClick={increaseNumber}>Add</button>
             </div>
-            <button onClick={decreaseNumber}>Minus</button>
-            <h3>{countedNumber}</h3>
-            <button onClick={increaseNumber}>Add</button>
         </div>
     );
 }
