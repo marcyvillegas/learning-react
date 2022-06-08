@@ -6,8 +6,6 @@ import Counter from './components/Counter'
 import FlipState from './components/FlipState'
 import Pet from './components/Pet'
 
-import { petDetails } from './lib/petData'
-
 export default function App() {
 
   // let heartIcon = petDetails.isHeartIconPressed ? "yes icon" : "no icon"
@@ -19,7 +17,7 @@ export default function App() {
       <Contacts />
       <Counter />
       <FlipState />
-      <Pet {...petDetails} />
+      <Pet />
     </div>
   );
 }
