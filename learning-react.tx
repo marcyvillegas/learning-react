@@ -9,5 +9,7 @@ NOTES:
     - only returns one parent element
     - can store in a variable and function
 
+>> STATES
+- Keep states as local as you can, as tightly to the component
 
 

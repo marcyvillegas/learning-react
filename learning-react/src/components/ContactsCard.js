@@ -1,4 +1,3 @@
-
 export default function ContactsCard(props) {
     return (
         // properties of the data

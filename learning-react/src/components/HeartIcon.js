@@ -1,8 +1,7 @@
-
 import heartFilledImage from '../images/heart-filled.png'
 import heartImage from '../images/heart.png'
 
-// CHILD COMPONENT (Pet <- Parent Component)
+// CHILD COMPONENT (Pet.js <- Parent Component)
 
 export default function StarIcon(props) {
 

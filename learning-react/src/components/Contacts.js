@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import ContactsCard from '../components/ContactsCard'
 import { contacts } from '../lib/contactsData'

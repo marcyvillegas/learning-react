@@ -1,4 +1,3 @@
-
 import turtlePicture from '../images/tutle.jpg'
 
 export default function Navbar() {

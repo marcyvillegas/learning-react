@@ -1,4 +1,3 @@
-
 export const petDetailsData = {
     name: "Turtle",
     color: "Green",

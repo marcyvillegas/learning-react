@@ -1,7 +1,6 @@
 
 import { useState } from 'react'
 import Count from './Count'
-
 export default function Counter() {
 
     // state

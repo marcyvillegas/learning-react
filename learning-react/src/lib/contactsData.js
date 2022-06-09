@@ -1,4 +1,3 @@
-
 export const contacts = [
     {
         name: "Joe",
