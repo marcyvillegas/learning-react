@@ -12,4 +12,6 @@ NOTES:
 >> STATES
 - Keep states as local as you can, as tightly to the component
 
-
+>> COMPONENT
+- components itself cannot de directly used on events, sa HTML element dapat
+- When mapping a component, you cannot simply pass the event 

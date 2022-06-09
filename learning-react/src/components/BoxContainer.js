@@ -7,10 +7,14 @@ export default function BoxContainer() {
     // boxesData state
     const [boxesDataState, setBoxesDataState] = useState(boxesData)
 
+    function toggleOn(id){
+        console.log(id)
+    }
+
     // mapping the boxes
     const boxes = boxesDataState.map((item) => {
         return (
-            <Box key={item.id} on={item.on} />
+            <Box key={item.id} on={item.on} toggleOn={toggleOn}/>
         )
     });
 
