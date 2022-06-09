@@ -16,14 +16,14 @@ export default function Counter() {
     // function that decreases the number
     function decreaseNumber() {
 
-        if (countedNumber != 0) {
+        if (countedNumber !== 0) {
             setCountedNumber(countedNumber - 1);
         }
     }
 
     return (
         <div className="counter">
-                <h1 style={{margin: '0'}}>Counter</h1>
+                <h1 style={{margin: '0'}}>Counter (State as props)</h1>
             <div style={{display: 'flex', alignItems: 'center', gap: '2rem'}}>
                 <button onClick={decreaseNumber}>Minus</button>
                 <Count number={countedNumber} />
