@@ -14,4 +14,5 @@ NOTES:
 
 >> COMPONENT
 - components itself cannot de directly used on events, sa HTML element dapat
-- When mapping a component, you cannot simply pass the event 
+- When mapping a component, you cannot simply pass the event. It should be passed as a props
+- Function as props with a parameter >> onClick={() => props.toggleOn(props.id)} <-(this is in a child component)
