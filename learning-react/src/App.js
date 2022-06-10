@@ -7,6 +7,7 @@ import Pet from './components/Pet'
 import Box from './components/BoxContainer'
 import JokeContainer from './components/JokeContainer'
 import Message from './components/Message'
+import Form from './components/Form'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Box />
       <JokeContainer />
       <Message />
+      <Form />
     </div>
   );
 }
