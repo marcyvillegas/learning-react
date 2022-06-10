@@ -13,6 +13,12 @@ NOTES:
 - Keep states as local as you can, as tightly to the component
 
 >> COMPONENT
-- components itself cannot de directly used on events, sa HTML element dapat
+- components itself cannot directly be used on events, sa HTML element dapat
 - When mapping a component, you cannot simply pass the event. It should be passed as a props
 - Function as props with a parameter >> onClick={() => props.toggleOn(props.id)} <-(this is in a child component)
+
+>> CONDITIONAL RENDERING
+- ampersands ( && ) <- display and not display
+- ternary operators ( if else using ? and : ) <- toggle , 2 options to display
+- if statements or switch case <- more complex logic , more than 2 options to display
+

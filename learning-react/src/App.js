@@ -5,9 +5,10 @@ import Counter from './components/Counter'
 import FlipState from './components/FlipState'
 import Pet from './components/Pet'
 import Box from './components/BoxContainer'
+import JokeContainer from './components/JokeContainer'
+import Message from './components/Message'
 
 export default function App() {
-
   return (
     <div className="App">
       <Navbar />
@@ -16,7 +17,9 @@ export default function App() {
       <Counter />
       <FlipState />
       <Pet />
-      <Box isDarkMode={true} />
+      <Box />
+      <JokeContainer />
+      <Message />
     </div>
   );
 }

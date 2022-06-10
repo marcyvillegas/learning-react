@@ -12,7 +12,12 @@ export default function BoxContainer() {
 
         setBoxesDataState(prevBoxesDataState => {
 
-            // TRADITIONAL FOR LOOP VERSION
+            // ARRAY MAP METHOD - declarative way
+            return prevBoxesDataState.map((item) => {
+                return item.id === id ? {...item, on: !item.on} : item
+            })
+
+            // TRADITIONAL FOR LOOP VERSION - imperative way
             // let newBoxes = []
             // for (let i = 0; i < prevBoxesDataState.length; i++) {
             //     let currentBox = prevBoxesDataState[i]
@@ -28,22 +33,20 @@ export default function BoxContainer() {
             // }
             // return newBoxes
 
-            let newBoxes = []
-
-            prevBoxesDataState.forEach((item) => {
-
-                if (item.id === id) {
-                    const updatedBox = {
-                        ...item,
-                        on: !item.on
-                    }
-                    newBoxes.push(updatedBox)
-                } else {
-                    newBoxes.push(item)
-                }
-            })
-
-            return newBoxes
+            // FOR EACH METHOD
+            // let newBoxes = []
+            // prevBoxesDataState.forEach((item) => {
+            //     if (item.id === id) {
+            //         const updatedBox = {
+            //             ...item,
+            //             on: !item.on
+            //         }
+            //         newBoxes.push(updatedBox)
+            //     } else {
+            //         newBoxes.push(item)
+            //     }
+            // })
+            // return newBoxes
         })
     }
 
@@ -51,7 +54,7 @@ export default function BoxContainer() {
     // mapping the boxes
     const boxes = boxesDataState.map((item) => {
         return (
-            <Box key={item.id} on={item.on} id={item.id} toggleOn={toggleOn} />
+            <Box key={item.id} on={item.on} toggleOn={() => toggleOn(item.id)} />
         )
     });
 
