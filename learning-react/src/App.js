@@ -8,6 +8,7 @@ import Box from './components/BoxContainer'
 import JokeContainer from './components/JokeContainer'
 import Message from './components/Message'
 import Form from './components/Form'
+import SignUpForm from './components/SignUpForm'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <JokeContainer />
       <Message />
       <Form />
+      <SignUpForm />
     </div>
   );
 }
