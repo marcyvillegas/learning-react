@@ -9,6 +9,7 @@ import JokeContainer from './components/JokeContainer'
 import Message from './components/Message'
 import Form from './components/Form'
 import SignUpForm from './components/SignUpForm'
+import FetchApi from './components/FetchApi'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Message />
       <Form />
       <SignUpForm />
+      <FetchApi />
     </div>
   );
 }

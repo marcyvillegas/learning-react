@@ -33,6 +33,11 @@ export default function SignUpForm() {
 
         setRenderState({ render: true })
 
+        // submitToApi(formData)
+
+        // setRenderState({ render: true }) <- bring back to false again after successfully submitting
+
+        //--------------------------------------------
         // if (formData.password === formData.confirmPassword) {
         //     console.log('Successfully signed up')
         // } else {
@@ -66,7 +71,7 @@ export default function SignUpForm() {
     return (
         <div style={{ padding: '0.5rem 5rem' }}>
 
-            <h1>Sign Up</h1>
+            <h1>Sign Up (Display after submiting)</h1>
             <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '30%' }} onSubmit={handleSubmit}>
 
                 <input type="email"

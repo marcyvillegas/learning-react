@@ -38,5 +38,9 @@ NOTES:
             );
         }
 
-
+>> What does React can't handle?
+-  out-Side effects
+    - sessionStorage / localStorage
+    - API / database interactions
+    - subscriptions ( example: web sockets )
 
