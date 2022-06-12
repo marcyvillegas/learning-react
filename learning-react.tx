@@ -43,4 +43,10 @@ NOTES:
     - sessionStorage / localStorage
     - API / database interactions
     - subscriptions ( example: web sockets )
+    - Syncing two
+- useEffect gives us a blank canvas to allow us to make those outside interactions
+
+>> useEffect
+- this will NOT run when the values of the values of the array dependencies stay the same between renders
+
 
