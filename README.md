@@ -1,6 +1,5 @@
 # Learning React from freeCodeCamp's YouTube video ⚛
  Link: https://www.youtube.com/watch?v=bMknfKXIFA8&t=34004s
- <hr>
  
  Here are the things I have learned with its corresponding js files in the components folder:
  <br>
