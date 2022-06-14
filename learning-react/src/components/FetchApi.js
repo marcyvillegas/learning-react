@@ -10,9 +10,10 @@ export default function FetchApi(){
 
     // side effect
     useEffect(() => {
-        
-        console.log('EFFECT')
-        
+
+        setUserData("Loading...")
+
+        // .THEN FORMAT
         fetch(`https://jsonplaceholder.typicode.com/users/${count}`)
         .then(res => res.json())
         .then(data => setUserData(data.name))
@@ -23,7 +24,7 @@ export default function FetchApi(){
         <div style={{ padding: '0.5rem 5rem' }}>
             <h1>Fetching API (using useEffect)</h1>
             {userData}
-            <p>num: {count}</p>
+            <p>id: {count}</p>
             <button onClick={() => setCount(prevCount => prevCount + 1)}>Add</button>
         </div>
     );

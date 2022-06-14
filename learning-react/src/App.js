@@ -10,6 +10,7 @@ import Message from './components/Message'
 import Form from './components/Form'
 import SignUpForm from './components/SignUpForm'
 import FetchApi from './components/FetchApi'
+import WindowTrackerContainer from './components/WindowTrackerContainer'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <Form />
       <SignUpForm />
       <FetchApi />
+      <WindowTrackerContainer />
     </div>
   );
 }
