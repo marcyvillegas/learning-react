@@ -38,3 +38,11 @@
 ## Changing local states using useEffect, clean function
 - WindowTrackerContainer.js
 - WindowTracker.js
+
+# Screenshots
+![image](https://user-images.githubusercontent.com/58241136/174428393-e21dc31a-9d52-4073-9c00-03cb7ca5d422.png)
+![image](https://user-images.githubusercontent.com/58241136/174428407-dc1453b8-2194-40a5-8796-09009d39a0e9.png)
+![image](https://user-images.githubusercontent.com/58241136/174428412-fa47cf2f-035a-4a66-a23a-6cc851080151.png)
+![image](https://user-images.githubusercontent.com/58241136/174428418-9e3634fc-a9a7-4a79-aa1c-ada9ca9d4a57.png)
+
+
