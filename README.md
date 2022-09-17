@@ -39,6 +39,9 @@
 - WindowTrackerContainer.js
 - WindowTracker.js
 
+## Show Hide Components
+- ShowHideComponents.js
+
 # Screenshots
 ![image](https://user-images.githubusercontent.com/58241136/174428393-e21dc31a-9d52-4073-9c00-03cb7ca5d422.png)
 ![image](https://user-images.githubusercontent.com/58241136/174428407-dc1453b8-2194-40a5-8796-09009d39a0e9.png)
