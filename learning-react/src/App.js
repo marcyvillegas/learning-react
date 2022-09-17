@@ -11,6 +11,7 @@ import Form from './components/Form'
 import SignUpForm from './components/SignUpForm'
 import FetchApi from './components/FetchApi'
 import WindowTrackerContainer from './components/WindowTrackerContainer'
+import ShowHideComponents from './components/ShowHideComponents'
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
       <SignUpForm />
       <FetchApi />
       <WindowTrackerContainer />
+      <ShowHideComponents />
     </div>
   );
 }

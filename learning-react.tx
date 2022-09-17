@@ -19,7 +19,7 @@ NOTES:
 
 >> CONDITIONAL RENDERING
 - ampersands ( && ) <- display and not display
-- ternary operators ( if else using ? and : ) <- toggle , 2 options to display
+- ternary operators ( if else using ? and : ) <- toggle , 2 options to display / 2 possible outputs
 - if statements or switch case <- more complex logic , more than 2 options to display , outside of the return block
     - Example:
         

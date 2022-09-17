@@ -23,7 +23,7 @@ export default function WindowTracker() {
             window.removeEventListener("resize", watchWidth)
         }
     }, [])
-
+    
     return(
         <p>Window width: {windowWidth}</p>
     );
