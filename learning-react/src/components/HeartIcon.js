@@ -3,7 +3,7 @@ import heartImage from '../images/heart.png'
 
 // CHILD COMPONENT (Pet.js <- Parent Component)
 
-export default function StarIcon(props) {
+export default function HeartIcon(props) {
 
     // variable for the heart icon
     let heartIcon = props.isPressed ? `${heartFilledImage}` : `${heartImage}`

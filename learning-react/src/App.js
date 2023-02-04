@@ -18,18 +18,31 @@ export default function App() {
     <div className="App">
       <Navbar />
       <MainContent />
+      {/* Array in State */}
       <Contacts />
+      {/* States as props */}
       <Counter />
+      {/* Toggle a state */}
       <FlipState />
+      {/* Object in State, Setting state from child component */}
       <Pet />
+      {/* Mapping a component, Updating state to a child component using event */}
       <Box />
+      {/* Conditional rendering and its cases */}
       <JokeContainer />
       <Message />
+      {/* Form State Object and displaying component after submiting */}
       <Form />
       <SignUpForm />
+      {/* using useEffect and fetching an API */}
       <FetchApi />
+      {/* Changing local states using useEffect, clean function */}
       <WindowTrackerContainer />
+      {/* Show Hide Components */}
       <ShowHideComponents />
+
+      {/* --- START OF LEARNING DEEPLY FROM DOCS 📘 https://beta.reactjs.org/learn --- */}
+      
     </div>
   );
 }
