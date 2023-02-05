@@ -15,9 +15,9 @@ import ShowHideComponents from './components/ShowHideComponents'
 import Accordion from './components/Accordion'
 import UnpreservedStateCounter from './components/UnpreservedStateCounter'
 import PreservedStateCounter from './components/PreservedStateCounter'
-import ResetStateCounter from './components/ResetStateCounterDifferentPosition'
 import ResetStateCounterDifferentPosition from './components/ResetStateCounterDifferentPosition'
 import ResetStateCounterSamePosition from './components/ResetStateCounterSamePosition'
+import FormReducer from './components/FormReducer'
 
 export default function App() {
   return (
@@ -68,8 +68,11 @@ export default function App() {
       <PreservedStateCounter />
       <ResetStateCounterDifferentPosition />
       <ResetStateCounterSamePosition />
-      
 
+      {/* Extracting State Logic into a Reducer */}
+      <FormReducer />
+
+      
     </div>
   );
 }

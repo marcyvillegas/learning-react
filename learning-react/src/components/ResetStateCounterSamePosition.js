@@ -6,7 +6,8 @@ import { useState } from 'react';
 export default function ResetStateCounterSamePosition() {
   const [isPlayerA, setIsPlayerA] = useState(true);
   return (
-    <div>
+    <div style={{ padding: '0.5rem 5rem' }}>
+    <h1>👉 Reset State in Same Position</h1>
       {isPlayerA ? (
         <Counter key="Taylor" person="Taylor" />
       ) : (

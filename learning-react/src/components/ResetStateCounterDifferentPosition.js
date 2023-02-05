@@ -7,7 +7,8 @@ import { useState } from 'react';
 export default function ResetStateCounterDifferentPosition() {
   const [isPaused, setIsPaused] = useState(false);
   return (
-    <div>
+    <div style={{ padding: '0.5rem 5rem' }}>
+    <h1>👉 Reset State in Different Position</h1>
       {isPaused ? (
         <p>See you later!</p> 
       ) : (

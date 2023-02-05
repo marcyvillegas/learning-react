@@ -8,7 +8,8 @@ import { useState } from 'react';
 export default function PreservedStateCounter() {
   const [isFancy, setIsFancy] = useState(false);
   return (
-    <div>
+    <div style={{ padding: '0.5rem 5rem' }}>
+    <h1>👉 Preserve State</h1>
       {isFancy ? (
         <Counter isFancy={true} /> 
       ) : (
