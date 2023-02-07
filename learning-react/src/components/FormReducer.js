@@ -92,7 +92,7 @@ function FormReducer() {
 
     return (
         <>
-            <div style={{ padding: '5rem 5rem' }}>
+            <div style={{ padding: '0.5rem 5rem' }}>
                 <h1>👉 Extracting state logic using Reducer</h1>
 
                 <form onSubmit={handleSubmit}>
