@@ -19,9 +19,11 @@ import ResetStateCounterDifferentPosition from './components/ResetStateCounterDi
 import ResetStateCounterSamePosition from './components/ResetStateCounterSamePosition'
 import FormReducer from './components/FormReducer'
 import CheckAuthentication from './components/CheckAuthentication'
+import UseRefCounter from './components/UseRefCounter'
 
 // Context
 import AuthContextProvider from './context/AuthContextProvider'
+import UseRefDOM from './components/UseRefDOM'
 
 export default function App() {
   return (
@@ -79,9 +81,21 @@ export default function App() {
 
         {/* Passing Data Deeply with Context */}
         <CheckAuthentication />
-        {/* with <AuthContextProvider> component */}
+        {/* ^ with <AuthContextProvider> component */}
 
-        {/*  */}
+        {/* Scaling Up with Reducer and Context */}
+        {/* skipped */}
+        
+        {/* ---------------------------------------------------------------------------- */}
+        {/* >> UNDER: Escape Hatches (Advanced) */}
+        {/* - step outside React and connect to external systems
+        - most of your application logic and data flow should not rely on these features */}
+
+        {/* Referencing Values with Refs */}
+        <UseRefCounter />
+
+        {/* Manipulating the DOM with Refs */}
+        <UseRefDOM />
 
       </div>
     </AuthContextProvider>
