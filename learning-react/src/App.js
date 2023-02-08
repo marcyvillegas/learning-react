@@ -20,84 +20,90 @@ import ResetStateCounterSamePosition from './components/ResetStateCounterSamePos
 import FormReducer from './components/FormReducer'
 import CheckAuthentication from './components/CheckAuthentication'
 import UseRefCounter from './components/UseRefCounter'
+import UseRefDOM from './components/UseRefDOM'
 
 // Context
 import AuthContextProvider from './context/AuthContextProvider'
-import UseRefDOM from './components/UseRefDOM'
+import ModalContextProvider from './context/ModalContextProvider'
+import ButtonModal from './components/ButtonModal'
+import ModalContainer from './components/ModalContainer'
 
 export default function App() {
   return (
-    <AuthContextProvider>
-      <div className="App">
-        <Navbar />
-        <MainContent />
+    <ModalContextProvider>
+      <AuthContextProvider>
+        <div className="App">
+          <Navbar />
+          <MainContent />
 
-        {/* Array in State */}
-        <Contacts />
+          {/* Array in State */}
+          <Contacts />
 
-        {/* States as props */}
-        <Counter />
+          {/* States as props */}
+          <Counter />
 
-        {/* Toggle a state */}
-        <FlipState />
+          {/* Toggle a state */}
+          <FlipState />
 
-        {/* Object in State, Setting state from child component */}
-        <Pet />
+          {/* Object in State, Setting state from child component */}
+          <Pet />
 
-        {/* Mapping a component, Updating state to a child component using event */}
-        <Box />
+          {/* Mapping a component, Updating state to a child component using event */}
+          <Box />
 
-        {/* Conditional rendering and its cases */}
-        <JokeContainer />
-        <Message />
+          {/* Conditional rendering and its cases */}
+          <JokeContainer />
+          <Message />
 
-        {/* Form State Object and displaying component after submiting */}
-        <Form />
-        <SignUpForm />
+          {/* Form State Object and displaying component after submiting */}
+          <Form />
+          <SignUpForm />
 
-        {/* using useEffect and fetching an API */}
-        <FetchApi />
+          {/* using useEffect and fetching an API */}
+          <FetchApi />
 
-        {/* Changing local states using useEffect, clean function */}
-        <WindowTrackerContainer />
+          {/* Changing local states using useEffect, clean function */}
+          <WindowTrackerContainer />
 
-        {/* Show Hide Components */}
-        <ShowHideComponents />
+          {/* Show Hide Components */}
+          <ShowHideComponents />
 
-        {/* --- START OF LEARNING DEEPLY FROM DOCS 📘 https://beta.reactjs.org/learn --- */}
+          {/* --- START OF LEARNING DEEPLY FROM DOCS 📘 https://beta.reactjs.org/learn --- */}
 
-        {/* >> UNDER: Managing State */}
-        {/* Sharing State Between Components */}
-        <Accordion />
+          {/* >> UNDER: Managing State */}
+          {/* Sharing State Between Components */}
+          <Accordion />
 
-        {/* Preserving and Resetting State */}
-        <UnpreservedStateCounter />
-        <PreservedStateCounter />
-        <ResetStateCounterDifferentPosition />
-        <ResetStateCounterSamePosition />
+          {/* Preserving and Resetting State */}
+          <UnpreservedStateCounter />
+          <PreservedStateCounter />
+          <ResetStateCounterDifferentPosition />
+          <ResetStateCounterSamePosition />
 
-        {/* Extracting State Logic into a Reducer */}
-        <FormReducer />
+          {/* Extracting State Logic into a Reducer */}
+          <FormReducer />
 
-        {/* Passing Data Deeply with Context */}
-        <CheckAuthentication />
-        {/* ^ with <AuthContextProvider> component */}
+          {/* Passing Data Deeply with Context */}
+          <CheckAuthentication />
+          {/* ^ with <AuthContextProvider> component */}
 
-        {/* Scaling Up with Reducer and Context */}
-        {/* skipped */}
-        
-        {/* ---------------------------------------------------------------------------- */}
-        {/* >> UNDER: Escape Hatches (Advanced) */}
-        {/* - step outside React and connect to external systems
+          {/* Scaling Up with Reducer and Context */}
+          <ButtonModal />
+          <ModalContainer />
+
+          {/* ---------------------------------------------------------------------------- */}
+          {/* >> UNDER: Escape Hatches (Advanced) */}
+          {/* - step outside React and connect to external systems
         - most of your application logic and data flow should not rely on these features */}
 
-        {/* Referencing Values with Refs */}
-        <UseRefCounter />
+          {/* Referencing Values with Refs */}
+          <UseRefCounter />
 
-        {/* Manipulating the DOM with Refs */}
-        <UseRefDOM />
+          {/* Manipulating the DOM with Refs */}
+          <UseRefDOM />
 
-      </div>
-    </AuthContextProvider>
+        </div>
+      </AuthContextProvider>
+    </ModalContextProvider>
   );
 }

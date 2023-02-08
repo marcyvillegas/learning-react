@@ -3,9 +3,7 @@ import { AuthContext } from '../context/AuthContextProvider';
 
 function CheckAuthentication() {
 
-    const authentication = useContext(AuthContext);
-
-    const { isAuthenticated, setIsAuthenticated } = authentication;
+    const { isAuthenticated, setIsAuthenticated }  = useContext(AuthContext);
 
     return (
         <div style={{ padding: '0.5rem 5rem' }}>
