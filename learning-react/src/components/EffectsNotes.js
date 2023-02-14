@@ -21,7 +21,6 @@ import React from 'react';
 // If there is no external system involved (for example, if you want to update a component’s state when some props or state change), you shouldn’t need an Effect.
 
 
-
 function EffectsNotes() {
   return (
     <div style={{ padding: '0.5rem 5rem' }}>

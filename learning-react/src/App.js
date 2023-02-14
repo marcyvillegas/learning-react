@@ -106,7 +106,18 @@ export default function App() {
           {/* Synchronizing with Effects & You Might Not Need an Effect*/}
           <EffectsNotes />
 
+          {/* Lifecycle of Reactive Effects */}
+          {/* - Unlike event handlers, which only run once per interaction, Effects run whenever synchronization is necessary. */}
+          {/* - You can’t “choose” your dependencies. Your dependencies must include every reactive value you read in the Effect. */}
+          {/* - Read more details in docs */}
+
+          {/* Separating Events from Effects */}
+          {/* - Event handlers run in response to specific interactions */}
+          {/* - Effects run whenever synchronization is needed */}
+          {/* - Event handlers are always triggered “manually”, for example by clicking a button. Effects, on the other hand, are “automatic”: they run and re-run as often as it’s needed to stay synchronized. */}
+          {/* - Props, state, and variables declared inside your component’s body are called reactive values */}
           
+
 
         </div>
       </AuthContextProvider>
