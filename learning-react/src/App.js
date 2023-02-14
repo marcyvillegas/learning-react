@@ -118,7 +118,6 @@ export default function App() {
           {/* - Props, state, and variables declared inside your component’s body are called reactive values */}
           
 
-
         </div>
       </AuthContextProvider>
     </ModalContextProvider>

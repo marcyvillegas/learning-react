@@ -1,0 +1,16 @@
+
+Reference: https://www.makeuseof.com/javascript-react-memoization/#:~:text=Using%20useMemo(),value%20returned%20from%20that%20function.
+
+>> useMemo()
+- It memoizes the value returned from the function.
+- The values in the dependency array dictate when the function is executed.
+- If the dependencies change, the function will execute again.
+
+// Code
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+----------------------------------------------
+
+// My reflection on useCallback, useMemo and memo
+- These hooks are used for optimization so that components will not re-render
+and function will not be re-created.

@@ -1,0 +1,31 @@
+
+Reference: https://dmitripavlutin.com/react-usecallback/
+
+1. Understanding functions equality check
+- An object (including a function object) equals only to itself.
+
+A few inline functions per component are acceptable.
+
+But in some cases you need to maintain a single function instance between renderings:
+- A functional component wrapped inside React.memo() accepts a function object as prop
+- When the function object is a dependency to other hooks, e.g. useEffect(..., [callback])
+- When the function has some internal state, e.g. when the function is debounced or throttled.
+
+---------------
+
+2. The purpose of useCallback()
+- A specific function is a different function object on every rendering a component.
+
+---------------
+
+3. A good use case
+
+* What is Memoization? * from https://www.freecodecamp.org/news/memoization-in-javascript-and-react/#what-is-memoization
+- It is an optimization technique that makes applications more efficient and hence faster.
+- It does this by storing computation results in cache, and retrieving that same information from the cache the next time it's needed instead of computing it again.
+
+- To prevent useless list re-renderings (especially if the list is big), you wrap it into React.memo().
+
+- The parent component of <MyBigList/> provides a handler function to know when an item is clicked.
+
+- As long as dependency is the same, useCallback() returns the same function object.
