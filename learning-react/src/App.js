@@ -20,13 +20,14 @@ import ResetStateCounterSamePosition from './components/ResetStateCounterSamePos
 import FormReducer from './components/FormReducer'
 import CheckAuthentication from './components/CheckAuthentication'
 import UseRefCounter from './components/UseRefCounter'
-import UseRefDOM from './components/UseRefDOM'
+import RefDOM from './components/RefDOM'
+import ButtonModal from './components/ButtonModal'
+import ModalContainer from './components/ModalContainer'
 
 // Context
 import AuthContextProvider from './context/AuthContextProvider'
 import ModalContextProvider from './context/ModalContextProvider'
-import ButtonModal from './components/ButtonModal'
-import ModalContainer from './components/ModalContainer'
+import EffectsNotes from './components/EffectsNotes'
 
 export default function App() {
   return (
@@ -94,13 +95,18 @@ export default function App() {
           {/* ---------------------------------------------------------------------------- */}
           {/* >> UNDER: Escape Hatches (Advanced) */}
           {/* - step outside React and connect to external systems
-        - most of your application logic and data flow should not rely on these features */}
+             - most of your application logic and data flow should not rely on these features */}
 
           {/* Referencing Values with Refs */}
           <UseRefCounter />
 
-          {/* Manipulating the DOM with Refs */}
-          <UseRefDOM />
+          {/* Manipulating the DOM with Refs &  */}
+          <RefDOM />
+
+          {/* Synchronizing with Effects & You Might Not Need an Effect*/}
+          <EffectsNotes />
+
+          
 
         </div>
       </AuthContextProvider>
