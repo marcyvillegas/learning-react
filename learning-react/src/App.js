@@ -116,7 +116,16 @@ export default function App() {
           {/* - Effects run whenever synchronization is needed */}
           {/* - Event handlers are always triggered “manually”, for example by clicking a button. Effects, on the other hand, are “automatic”: they run and re-run as often as it’s needed to stay synchronized. */}
           {/* - Props, state, and variables declared inside your component’s body are called reactive values */}
-          
+
+          {/* Removing Effect Dependencies */}
+          {/* - To remove a dependency, you need to “prove” to the linter that it doesn’t need to be a dependency. */}
+          {/* - ^ Example: a variable outside of the component */}
+          {/* - To change the dependency list, change the code. */}
+          {/* - Try to avoid object and function dependencies. Move them outside the component or inside the Effect. */}
+          {/* - In JavaScript, objects and functions are considered different if they were created at different times. */}
+
+          {/* Reusing Logic with Custom Hooks */}
+          {/* - see -> hooks/CustomHooksNotes */}
 
         </div>
       </AuthContextProvider>

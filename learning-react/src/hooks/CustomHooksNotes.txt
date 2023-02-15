@@ -1,0 +1,94 @@
+
+Reference: https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks
+
+- Custom Hooks let you share logic between components.
+- Create hooks for repetitive logic.
+- At the end of the function, return a variable / state. This lets your components read that value.
+- But not all returns a value or state.
+
+----------------------------------------------
+>> Example:
+
+// useOnlineStatus Custom Hook
+function useOnlineStatus() {
+  const [isOnline, setIsOnline] = useState(true);
+  useEffect(() => {
+    function handleOnline() {
+      setIsOnline(true);
+    }
+    function handleOffline() {
+      setIsOnline(false);
+    }
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
+  return isOnline;
+}
+---------------------------------------------------
+// Components using the custom hook
+import { useOnlineStatus } from './useOnlineStatus.js';
+
+function StatusBar() {
+  const isOnline = useOnlineStatus();
+  return <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>;
+}
+
+function SaveButton() {
+  const isOnline = useOnlineStatus();
+
+  function handleSaveClick() {
+    console.log('✅ Progress saved');
+  }
+
+  return (
+    <button disabled={!isOnline} onClick={handleSaveClick}>
+      {isOnline ? 'Save progress' : 'Reconnecting...'}
+    </button>
+  );
+}
+-------------------------------------------
+// App.js
+export default function App() {
+  return (
+    <>
+      <SaveButton />
+      <StatusBar />
+    </>
+  );
+}
+------------------------------------------
+
+- Hook names always start with "use" + camel case name
+-  Only Hooks and components can call other hooks
+
+- Functions that don’t call Hooks don’t need to be Hooks.
+- If your function doesn’t call any Hooks, avoid the use prefix.
+
+- Custom Hooks let you share stateful logic, not state itself 
+- The custom hooks are two completely independent state variables and Effects(if used).
+- Each call to a Hook is completely independent from every other call to the same Hook. 
+- When you need to share the state itself between multiple components, lift it up and pass it down instead.
+
+- Passing reactive values between Hooks, and they stay up-to-date.
+- Like components, custom Hooks need to be pure.
+- Think of custom Hooks’ code as part of your component’s body.
+
+- When to use custom Hooks
+- Whenever you write an Effect, consider whether it would be clearer to also wrap it in a custom Hook.
+- You shouldn’t need Effects very often, so if you’re writing one, it means that you need to “step outside React” to synchronize with some external system or to do something that React doesn’t have a built-in API for.
+- Wrapping your Effect into a custom Hook lets you precisely communicate your intent and how the data flows through it.
+
+- Keep your custom Hooks focused on concrete high-level use cases
+- Start by choosing your custom Hook’s name.
+- If you struggle to pick a clear name, it might mean that your Effect is too coupled to the rest of your component’s logic, and is not yet ready to be extracted.
+
+- If you’re writing an Effect, start by using the React API directly.
+- Then, you can (but don’t have to) extract custom Hooks for different high-level use cases.
+
+- A good custom Hook makes the calling code more declarative by constraining what it does.
+- For example, useChatRoom(options) can only connect to the chat room, while useImpressionLog(eventName, extraData) can only send an impression log to the analytics.
+- If your custom Hook API doesn’t constrain the use cases and is very abstract, in the long run it’s likely to introduce more problems than it solves.
